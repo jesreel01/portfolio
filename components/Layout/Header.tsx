@@ -12,11 +12,11 @@ const navItems = [
 
 const Header = (props: Props) => {
   return (
-    <header className="h-16 flex justify-between w-full items-center absolute top-0">
+    <header id="header" className="py-4 flex items-center justify-between">
       <div className="cursor-pointer text-xl font-bold hover:underline">
         Jesreel
       </div>
-      <nav className="space-x-4">
+      <nav id="navigation" className="space-x-4">
         {navItems.map((item) => (
           <Link
             href={item.href}

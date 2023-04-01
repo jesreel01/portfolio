@@ -1,28 +1,30 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import PageLayout from '../components/Layout/PageLayout'
+import Header from '../components/Layout/Header'
+import Content from '../components/Layout/Content'
+import Footer from '../components/Layout/Footer'
+import PersonalIntro from '../components/PersonalIntro'
+import PortfolioPhoto from '../components/PortfolioPhoto'
 
 export default function Home() {
   return (
-    <div>
-      <div className="min-h-screen flex items-center">
-        <div className="">
-          <h1 className="text-4xl font-semibold mb-2">
-            I'm Jesreel John Miole
-          </h1>
-          <h3 className="text-xl font-medium mb-3">
-            - Fullstack developer based in the Philippines.
-          </h3>
-          <div className="space-x-3">
-            <button className="border-2 p-1 border-black rounded">
-              Project
-            </button>
-            <button className="border-2 p-1 border-black rounded">
-              Resume
-            </button>
+    <PageLayout>
+      <Header />
+      <Content>
+        <div id="intro" className="flex mt-4 sm:mt-16">
+          <PortfolioPhoto
+            src="/portfolio-profile-img.jpg"
+            alt="Jesreel John Miole"
+            size={180}
+          />
+
+          <div className="flex-1 max-w-md ml-10">
+            <PersonalIntro />
           </div>
         </div>
-      </div>
-      <div>Testing lang</div>
-    </div>
+      </Content>
+      <Footer />
+    </PageLayout>
   )
 }

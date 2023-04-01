@@ -1,16 +1,19 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Header from '../components/Header'
+import Header from '../components/Layout/Header'
+import PageLayout from '../components/Layout/PageLayout'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <div className="max-w-6xl mx-auto flex relative">
+      <Component {...pageProps} />
+
+      {/* <div className="max-w-6xl mx-auto flex relative">
         <Header />
       </div>
       <div className="max-w-6xl  mx-auto ">
         <Component {...pageProps} />
-      </div>
+      </div> */}
     </>
   )
 }
