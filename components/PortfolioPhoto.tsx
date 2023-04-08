@@ -5,9 +5,10 @@ type Props = {
   src: string
   alt: string
   size: number
+  className?: string
 }
 
-const PortfolioPhoto = ({ src, alt, size }: Props) => {
+const PortfolioPhoto = ({ src, alt, size, className }: Props) => {
   return (
     <div className="inline-block">
       <Image
@@ -15,7 +16,7 @@ const PortfolioPhoto = ({ src, alt, size }: Props) => {
         alt={alt}
         width={size}
         height={size}
-        className="rounded-full filter grayscale"
+        className={`rounded-full filter grayscale ${className}`}
       />
     </div>
   )

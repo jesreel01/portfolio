@@ -12,7 +12,7 @@ const navItems = [
 
 const Header = (props: Props) => {
   return (
-    <header id="header" className="py-4 flex items-center justify-between">
+    <header id="header" className="py-4 px-4 flex items-center justify-between">
       <div className="cursor-pointer text-xl font-bold hover:underline">
         Jesreel
       </div>
