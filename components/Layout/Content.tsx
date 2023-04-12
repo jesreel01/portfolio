@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 const Content = ({ children }: Props) => {
-  return <div className="flex flex-1 px-4">{children}</div>
-}
+  return <main className="flex-grow px-4">{children}</main>;
+};
 
-export default Content
+export default Content;

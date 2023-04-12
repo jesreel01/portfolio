@@ -11,15 +11,11 @@ const Homepage = () => {
     <PageLayout>
       <Header />
       <Content>
-        <div id="intro" className="flex mt-4 sm:mt-16">
+        <div id="intro" className="mt-4 sm:mt-16">
           <PersonalIntroCard />
         </div>
       </Content>
-      <Avatar
-        size="default"
-        className="inline-flex rounded-full bg-slate-600 h-10 w-10"
-      />
-      <div className="bg-emerald-400">sdfsdfsdfsdfsdf</div>
+
       <Footer />
     </PageLayout>
   );

@@ -1,7 +1,7 @@
-import PageLayout from '../components/Layout/PageLayout'
-import Header from '../components/Layout/Header'
-import Content from '../components/Layout/Content'
-import Footer from '../components/Layout/Footer'
+import PageLayout from '../components/Layout/PageLayout';
+import Header from '../components/Layout/Header';
+import Content from '../components/Layout/Content';
+import Footer from '../components/Layout/Footer';
 
 export default function AboutPage() {
   return (
@@ -10,5 +10,5 @@ export default function AboutPage() {
       <Content>About Page</Content>
       <Footer />
     </PageLayout>
-  )
+  );
 }

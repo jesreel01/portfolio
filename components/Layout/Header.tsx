@@ -1,16 +1,14 @@
-import Link from 'next/link'
-import React from 'react'
-
-type Props = {}
+import Link from 'next/link';
+import React from 'react';
 
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
-]
+];
 
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <header id="header" className="py-4 px-4 flex items-center justify-between">
       <div className="cursor-pointer text-xl font-bold hover:underline">
@@ -29,7 +27,7 @@ const Header = (props: Props) => {
         ))}
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
