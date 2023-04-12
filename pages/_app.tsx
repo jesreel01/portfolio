@@ -1,13 +1,10 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import Header from '../components/Layout/Header'
-import PageLayout from '../components/Layout/PageLayout'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
-
       {/* <div className="max-w-6xl mx-auto flex relative">
         <Header />
       </div>
@@ -15,5 +12,5 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </div> */}
     </>
-  )
+  );
 }

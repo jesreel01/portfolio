@@ -1,12 +1,12 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 type Props = {
-  src: string
-  alt: string
-  size: number
-  className?: string
-}
+  src: string;
+  alt: string;
+  size: number;
+  className?: string;
+};
 
 const PortfolioPhoto = ({ src, alt, size, className }: Props) => {
   return (
@@ -19,7 +19,7 @@ const PortfolioPhoto = ({ src, alt, size, className }: Props) => {
         className={`rounded-full filter grayscale ${className}`}
       />
     </div>
-  )
-}
+  );
+};
 
-export default PortfolioPhoto
+export default PortfolioPhoto;

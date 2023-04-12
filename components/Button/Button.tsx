@@ -8,8 +8,8 @@ type Props = {
 
 const sizesClasses = {
   sm: 'border-2 h-8 py-0 px-1 border-black rounded',
-  base: 'border-2 p-1 h-10 border-black rounded',
-  lg: 'text-lg border-2 p-2 border-black rounded',
+  base: 'border-2 p-1 h-9 border-black rounded',
+  lg: 'text-lg border-2 p-1 h-10 border-black rounded',
 };
 
 const Button = (props: Props) => {
